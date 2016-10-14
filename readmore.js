@@ -13,7 +13,7 @@ $(document).ready(function() {
 
       var count = 0;
       var stop = false;
-      
+
       target.children().each(function (i){
         var content = $(this).html();
         thisLength = content.length;
@@ -28,7 +28,7 @@ $(document).ready(function() {
               var diff = count - options.length;
               var pos = thisLength - diff;
               var c = content.substr(0, pos);
-              var h = content.substr(pos, content.length);
+              var h = content.substr(pos, content.length); 
 
               var html = c + '<span class="readmore-ellipses">' + options.ellipsestext+ '&nbsp;</span> \
                                 <span class="readmore-hidden">' + h + '</span>';
