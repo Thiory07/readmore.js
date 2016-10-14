@@ -28,7 +28,7 @@ $(document).ready(function() {
               var diff = count - options.length;
               var pos = thisLength - diff;
               var c = content.substr(0, pos);
-              var h = content.substr(pos, content.length); 
+              var h = content.substr(pos, content.length);
 
               var html = c + '<span class="readmore-ellipses">' + options.ellipsestext+ '&nbsp;</span> \
                                 <span class="readmore-hidden">' + h + '</span>';
@@ -39,10 +39,7 @@ $(document).ready(function() {
             $(this).addClass('readmore-hidden');
           }
         }
-
-
       });
-
       // Setup the style for :: after the read-more
       $(this).append("<p><a href=\"#\" class=\"readmore-morelink \">"+ options.readmoretext + "</a></p> <style> \.readmore-hidden{ display: none; } \.readmore-show{display:inline!important;} <\/style>");
 
@@ -56,15 +53,19 @@ $(document).ready(function() {
           target.find('.readmore-ellipses').hide();
           morelink.html(options.lesstext);
         }
-
-
       });
-
-      //console.log(item);
-      // legacy
-
-
     }
-    $('[data-widget="read-more"]').readmore();
 
+
+    // Testing
+    var sum =0 ;
+    var total = 500;
+
+    for (var i = 0; i < total; i++) {
+      console.time("Jquery Plugin");
+      $('[data-widget="read-more"]').readmore();
+      sum += console.timeEnd("Jquery Plugin");
+      console.log(sum);
+    }
+    console.log(sum / total);
 });
