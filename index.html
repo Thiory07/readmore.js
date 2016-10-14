@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="read-more" data-widget="read-more">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit unde aspernatur dolor, molestiae animi. Ipsam consequatur voluptatibus, libero cupiditate sint? Ipsam dignissimos possimus voluptatibus assumenda, earum illo recusandae ipsa hic?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quod, quo ea libero ipsum. Cumque quae harum magnam fugiat facilis doloribus iure quo beatae vero non voluptates, voluptatem. Incidunt, labore!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis rerum, officiis eveniet quibusdam porro, inventore error. Labore nisi, iusto, ducimus necessitatibus, soluta impedit repellat delectus blanditiis doloribus facilis nam <a class="event-link" href="#">fugiat</a>.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit perferendis in sequi aut, sunt voluptas, optio cum eos animi reprehenderit necessitatibus quis nobis possimus accusantium. Praesentium, laborum, eius. Beatae, laborum!</p>
+
+
+  </div>
+  <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+  <script src="readmore.js"></script>
+  <script >
+    $(".event-link").on("click", function (e){
+      e.preventDefault();
+      console.log("firing-event");
+    })
+  </script>
+</body>
+</html>
